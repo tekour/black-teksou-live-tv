@@ -180,7 +180,7 @@ function App() {
   return (
     <div className="app">
       <header className="topbar">
-        <div className="brand"><div className="brandIcon"><Radio size={20}/></div><span>M3U <b>LIVE</b></span></div>
+        <div className="brand"><div className="brandIcon"><Radio size={20}/></div><span>BLACK TEKSOU LIVE TV 🐅🖤🟡</span></div>
         <div className="topActions">
           <button onClick={() => fileRef.current?.click()}><Upload size={17}/> Importer M3U</button>
           <input ref={fileRef} type="file" accept=".m3u,.m3u8,.txt" hidden onChange={importFile}/>
