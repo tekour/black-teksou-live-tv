@@ -1056,3 +1056,350 @@ button:disabled {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* BLACK TEKSOU LIVE TV — NAVIGATION IPTV PREMIUM */
+
+/* Fond général */
+:root {
+  --jaune: #ffd400;
+  --noir: #080808;
+  --panneau: #121212;
+  --bordure: #292929;
+  --texte-secondaire: #a6a6a6;
+}
+
+.app {
+  background: #080808;
+}
+
+/* Barre du haut */
+.topbar {
+  min-height: 76px;
+  padding: 12px 26px;
+  background: #090909;
+  border-bottom: 1px solid #252525;
+}
+
+.brand {
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.brandIcon {
+  background: #202020;
+  border: 1px solid #393939;
+  border-radius: 50%;
+}
+
+.headerSearch {
+  background: #171717;
+  border: 1px solid #333;
+  border-radius: 7px;
+}
+
+/* Navigation TV */
+.layout {
+  grid-template-columns: 225px minmax(0, 1fr);
+}
+
+.sidebar {
+  position: sticky;
+  top: 76px;
+  height: calc(100vh - 76px);
+  min-height: 0;
+  padding: 24px 15px;
+  background: #0c0c0c;
+  border-right: 1px solid #252525;
+}
+
+.sidebarBrand {
+  padding: 8px 10px 30px;
+  font-size: 12px;
+  letter-spacing: .7px;
+}
+
+.navItems {
+  gap: 9px;
+}
+
+.navItems button {
+  min-height: 52px;
+  padding: 14px 15px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #c5c5c5;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navItems button.active {
+  color: var(--jaune);
+  background: #24200b;
+  border-color: #62520b;
+  box-shadow: inset 3px 0 var(--jaune);
+}
+
+.navItems button:hover {
+  color: #fff;
+  background: #1b1b1b;
+  border-color: #383838;
+}
+
+.sidebarBottom {
+  border-color: #292929;
+}
+
+/* Navigation à la télécommande */
+button:focus-visible,
+.channelCard:focus-visible,
+.categoryCard:focus-visible {
+  outline: 3px solid var(--jaune);
+  outline-offset: 3px;
+}
+
+/* Contenu principal */
+.mainContent {
+  padding: 28px;
+  min-width: 0;
+}
+
+.hero {
+  min-height: 300px;
+  border-radius: 12px;
+  border: 1px solid #303030;
+  background:
+    radial-gradient(ellipse at 85% 45%, #4c3d0c 0%, transparent 38%),
+    linear-gradient(110deg, #191919, #0b0b0b 75%);
+  box-shadow: none;
+}
+
+.hero::after {
+  background: linear-gradient(
+    90deg,
+    #0b0b0b 0%,
+    #0b0b0bdb 45%,
+    transparent 100%
+  );
+}
+
+.heroBadge {
+  background: #171717;
+  border-color: #51450e;
+  border-radius: 5px;
+}
+
+.hero h1 {
+  letter-spacing: -1px;
+}
+
+.heroButton {
+  border-radius: 6px;
+  min-height: 48px;
+}
+
+.heroTiger {
+  filter: grayscale(.3);
+}
+
+/* Grandes rubriques IPTV */
+.categoryGrid {
+  gap: 14px;
+  margin-top: 24px;
+}
+
+.categoryCard {
+  min-height: 145px;
+  padding: 21px;
+  background: #141414;
+  border: 1px solid #303030;
+  border-radius: 9px;
+}
+
+.categoryCard > svg:first-child {
+  width: 30px;
+  height: 30px;
+  color: var(--jaune);
+}
+
+.categoryCard strong {
+  font-size: 15px;
+}
+
+.categoryCard span {
+  font-size: 12px;
+}
+
+.categoryCard:hover,
+.categoryCard:focus-visible {
+  background: #211d0b;
+  border-color: var(--jaune);
+}
+
+/* Titres de rubrique */
+.sectionHeading {
+  margin-bottom: 20px;
+}
+
+.sectionHeading h2 {
+  font-size: 22px;
+  letter-spacing: -.3px;
+}
+
+/* Filtres de groupes */
+.groups button {
+  background: #171717;
+  border-color: #333;
+  border-radius: 6px;
+}
+
+.groups button.active {
+  background: var(--jaune);
+  color: #090909;
+}
+
+/* Chaînes : cartes plus lisibles sur TV */
+.channelGrid {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(175px, 1fr)
+  );
+  gap: 14px;
+}
+
+.channelCard {
+  min-height: 175px;
+  padding: 17px;
+  background: #141414;
+  border: 1px solid #303030;
+  border-radius: 9px;
+}
+
+.channelCard:hover {
+  background: #202020;
+  border-color: #777;
+}
+
+.channelCard.selected,
+.channelCard:focus-visible {
+  background: #211d0b;
+  border-color: var(--jaune);
+  box-shadow: 0 0 0 1px var(--jaune);
+}
+
+.channelLogo {
+  background: #222;
+  border-radius: 7px;
+}
+
+.channelFavorite {
+  background: #222;
+}
+
+/* Lecteur */
+.videoWrap {
+  border-color: #333;
+  border-radius: 10px;
+}
+
+.favButton,
+.clear {
+  border-radius: 6px;
+  border-color: #333;
+}
+
+/* Smart TV et télécommandes */
+@media (min-width: 1101px) {
+  .navItems button,
+  .categoryCard,
+  .channelCard,
+  .groups button,
+  .topActions button {
+    transition:
+      background .15s ease,
+      border-color .15s ease,
+      outline-color .15s ease;
+  }
+
+  .navItems button,
+  .categoryCard,
+  .channelCard {
+    cursor: pointer;
+  }
+}
+
+/* Tablette */
+@media (max-width: 1100px) and (min-width: 761px) {
+  .layout {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+
+  .mainContent {
+    padding: 20px;
+  }
+
+  .channelGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Téléphone */
+@media (max-width: 760px) {
+  .topbar {
+    min-height: 60px;
+    padding: 8px 10px;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 60px;
+    height: calc(100dvh - 60px);
+    min-height: 0;
+    background: #0b0b0b;
+  }
+
+  .mainContent {
+    padding: 15px 12px 28px;
+  }
+
+  .hero {
+    min-height: 270px;
+    border-radius: 10px;
+  }
+
+  .categoryCard {
+    min-height: 118px;
+    padding: 14px;
+  }
+
+  .categoryCard strong {
+    font-size: 13px;
+  }
+
+  .channelGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 9px;
+  }
+
+  .channelCard {
+    min-height: 150px;
+    padding: 12px;
+  }
+
+  .sectionHeading h2 {
+    font-size: 17px;
+  }
+}
+
+/* Réduit les animations si demandé par l'appareil */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
