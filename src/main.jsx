@@ -21,6 +21,11 @@ import {
     Radio,
     Settings,
     Trash2,
+    Home,
+Film,
+Clapperboard,
+Heart,
+LayoutGrid,
 } from "lucide-react";
 import "./styles.css";
 
