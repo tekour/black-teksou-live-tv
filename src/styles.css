@@ -24,13 +24,13 @@ text-rendering: optimizeLegibility;
 html {
 min-height: 100%;
 scroll-behavior: smooth;
-background: var(–noir);
+background: var(–-noir);
 }
 
 body {
 margin: 0;
 min-height: 100vh;
-background: var(–noir);
+background: var(–-noir);
 }
 
 body, button, input {
@@ -51,7 +51,7 @@ transform .2s ease, color .2s ease;
 }
 
 button:focus-visible, input:focus-visible {
-outline: 2px solid var(–jaune);
+outline: 2px solid var(–-jaune);
 outline-offset: 3px;
 }
 
@@ -96,7 +96,7 @@ white-space: nowrap;
 }
 
 .brand b {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .brandIcon {
@@ -126,7 +126,7 @@ color: #aaa58d;
 }
 
 .headerSearch:focus-within {
-border-color: var(–jaune);
+border-color: var(–-jaune);
 }
 
 .headerSearch input {
@@ -160,7 +160,7 @@ justify-content: center;
 gap: 8px;
 padding: 11px 14px;
 border-radius: 10px;
-background: var(–jaune);
+background: var(–-jaune);
 color: #080808;
 font-weight: 800;
 }
@@ -184,7 +184,7 @@ border: 1px solid #35300f;
 .topActions .secondary:hover,
 .secondary:hover {
 background: #282206;
-border-color: var(–jaune);
+border-color: var(–-jaune);
 }
 
 /* PARAMÈTRES ET IMPORTATION */
@@ -264,7 +264,7 @@ color: #fffdf2;
 }
 
 .sidebarBrand b {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .navItems {
@@ -296,8 +296,8 @@ border-color: #3b320b;
 
 .navItems button.active {
 color: #080808;
-background: var(–jaune);
-border-color: var(–jaune);
+background: var(–-jaune);
+border-color: var(–-jaune);
 box-shadow: 0 4px 20px #ffd40020;
 }
 
@@ -361,7 +361,7 @@ max-width: 570px;
 display: inline-flex;
 align-items: center;
 gap: 7px;
-color: var(–jaune);
+color: var(–-jaune);
 border: 1px solid #66520b;
 background: #1b1808;
 padding: 8px 11px;
@@ -380,7 +380,7 @@ letter-spacing: -2px;
 }
 
 .hero h1 span {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .hero p {
@@ -455,7 +455,7 @@ text-align: left;
 }
 
 .categoryCard > svg:first-child {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .categoryCard strong {
@@ -477,7 +477,7 @@ color: #81764b;
 
 .categoryCard:hover {
 transform: translateY(-3px);
-border-color: var(–jaune);
+border-color: var(–-jaune);
 background: #191609;
 }
 
@@ -505,7 +505,7 @@ min-width: 0;
 
 .sectionHeading > div > svg {
 flex-shrink: 0;
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .sectionHeading h2 {
@@ -530,7 +530,7 @@ background: radial-gradient(ellipse at top right, #302608, transparent 65%), #0c
 }
 
 .pageIntro > svg {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .pageIntro h1 {
@@ -582,7 +582,7 @@ color: #c9c6b5;
 }
 
 .emptyPlayer > svg {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .emptyPlayer h2 {
@@ -612,7 +612,7 @@ font-size: 12px;
 }
 
 .spin {
-color: var(–jaune);
+color: var(–-jaune);
 animation: spin 1s linear infinite;
 }
 
@@ -659,7 +659,7 @@ justify-content: center;
 }
 
 .videoControls button:hover {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .videoControls svg {
@@ -669,7 +669,7 @@ height: 19px;
 
 .videoControls input {
 width: 90px;
-accent-color: var(–jaune);
+accent-color: var(–-jaune);
 }
 
 .controlSpacer {
@@ -677,7 +677,7 @@ flex: 1;
 }
 
 .liveBadge {
-color: var(–jaune);
+color: var(–-jaune);
 font-size: 10px;
 font-weight: 900;
 letter-spacing: .8px;
@@ -701,7 +701,7 @@ overflow-wrap: anywhere;
 
 .eyebrow {
 font-size: 10px;
-color: var(–jaune);
+color: var(–-jaune);
 font-weight: 900;
 letter-spacing: 1.3px;
 }
@@ -726,13 +726,13 @@ font-weight: 600;
 }
 
 .favButton:hover {
-border-color: var(–jaune);
+border-color: var(–-jaune);
 background: #211b06;
 }
 
 .favButton svg {
 width: 18px;
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 /* FILTRES */
@@ -760,9 +760,9 @@ border-color: #8c7512;
 }
 
 .groups button.active {
-background: var(–jaune);
+background: var(–-jaune);
 color: #080808;
-border-color: var(–jaune);
+border-color: var(–-jaune);
 font-weight: 900;
 }
 
@@ -796,7 +796,7 @@ background: #191609;
 }
 
 .channelCard.selected {
-border-color: var(–jaune);
+border-color: var(–-jaune);
 background: #211b06;
 box-shadow: 0 0 0 1px #ffd40020;
 }
@@ -810,7 +810,7 @@ background: #201d0e;
 display: grid;
 place-items: center;
 overflow: hidden;
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .channelLogo img {
@@ -862,12 +862,12 @@ color: #a9a48c;
 }
 
 .channelFavorite:has(svg[fill=“currentColor”]) {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .channelFavorite:hover {
 background: #302608;
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 /* ÉTATS VIDES */
@@ -882,7 +882,7 @@ background: #0b0b08;
 }
 
 .listEmpty > svg {
-color: var(–jaune);
+color: var(–-jaune);
 }
 
 .listEmpty p {
@@ -909,8 +909,8 @@ font-size: 12px;
 }
 
 .clear:hover {
-border-color: var(–jaune);
-color: var(–jaune);
+border-color: var(–-jaune);
+color: var(–-jaune);
 }
 
 /* RESPONSIVE TABLETTE */
