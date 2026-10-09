@@ -1,7 +1,7 @@
 /* BLACK TEKSOU LIVE TV — SPORT PREMIUM
 NOIR & JAUNE — VERSION RESPONSIVE */
 
-@import url(“https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap”);
+@import url(""https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"".);
 
 :root {
 font-family: Inter, system-ui, sans-serif;
@@ -341,7 +341,7 @@ box-shadow: 0 20px 55px #0005;
 }
 
 .hero::after {
-content: “”;
+content: "".;
 position: absolute;
 inset: 0;
 z-index: -1;
@@ -397,7 +397,7 @@ gap: 9px;
 margin-top: 12px;
 padding: 13px 18px;
 border-radius: 10px;
-background: var(–jaune);
+background: var(—-jaune);
 color: #080808;
 font-size: 13px;
 font-weight: 900;
@@ -861,7 +861,7 @@ background: #0a0a08;
 color: #a9a48c;
 }
 
-.channelFavorite:has(svg[fill=“currentColor”]) {
+.channelFavorite:has(svg[fill=""currentColor"".]) {
 color: var(–-jaune);
 }
 
