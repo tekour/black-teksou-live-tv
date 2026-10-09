@@ -84,7 +84,7 @@ function App() {
     const [volume, setVolume] = useState(1);
     const [sidebar, setSidebar] = useState(true);
     const [showSettings, setShowSettings] = useState(false);
-
+const [activeTab, setActiveTab] = useState("Accueil");
     useEffect(() => {
         localStorage.setItem("m3u-favorites", JSON.stringify(favorites));
     }, [favorites]);
